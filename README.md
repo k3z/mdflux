@@ -1,12 +1,33 @@
 # mdFlux
 
-Simply convert markdown to html with attributes list support and back again.
+Simply convert markdown to html with attribute lists (minimal support, [more informations](https://pythonhosted.org/Markdown/extensions/attr_list.html)) support and back again.
 You can use any markdown to html or html to markdown parser you like.
 
 ## Dependencies
 
 * jQuery
 * [uuid-js](https://github.com/pnegri/uuid-js)
+
+
+## usage
+
+    var md = '## de Finibus Bonorum et Malorum\n\n![Sed ut perspiciatis](pg14.jpg){: class="img-half pull-right"}Sed ut perspiciatis et quasi **[architecto beatae vitae](https://en.wikipedia.org/wiki/Architect){: class="text-success" }** dicta sunt explicabo. {: class="lead"}\n\n';
+    var parser = new mdFlux();
+
+    # Set parsers
+    parser.setMarkdownParser(marked);
+    parser.setHTMLParser(function(html) { return toMarkdown(html, { gfm: true }) });
+
+    # Convert to HTML
+    var html = parser.toHTML(md);
+
+    # Convert to markdown again
+    md = parser.toMarkdown(html);
+
+
+### Result
+
+![](result.png)
 
 
 ## test
