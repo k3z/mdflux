@@ -6,7 +6,11 @@ You can use any markdown to html or html to markdown parser you like.
 ## Dependencies
 
 * jQuery
-* [uuid-js](https://github.com/pnegri/uuid-js)
+
+### Tested parsers
+
+* [Marked](https://github.com/chjj/marked) (markdown to html)
+* [to-markdown](https://github.com/domchristie/to-markdown) (html to markdown)
 
 
 ## usage
@@ -37,12 +41,6 @@ You can use any markdown to html or html to markdown parser you like.
 
 
 Open ./test/index.html in your browser.
-
-### Current parsers
-
-* [Marked](https://github.com/chjj/marked) (markdown to html)
-* [to-markdown](https://github.com/domchristie/to-markdown) (html to markdown)
-
 
 License
 
