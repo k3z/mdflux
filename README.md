@@ -15,6 +15,8 @@ You can use any markdown to html or html to markdown parser you like.
 
 ## Usage
 
+    require('mdflux');
+
     var md = '## de Finibus Bonorum et Malorum\n\n![Sed ut perspiciatis](pg14.jpg){: class="img-half pull-right"}Sed ut perspiciatis et quasi **[architecto beatae vitae](https://en.wikipedia.org/wiki/Architect){: class="text-success" }** dicta sunt explicabo. {: class="lead"}\n\n';
     var parser = new mdFlux();
 
