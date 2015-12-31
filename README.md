@@ -13,7 +13,7 @@ You can use any markdown to html or html to markdown parser you like.
 * [to-markdown](https://github.com/domchristie/to-markdown) (html to markdown)
 
 
-## usage
+## Usage
 
     var md = '## de Finibus Bonorum et Malorum\n\n![Sed ut perspiciatis](pg14.jpg){: class="img-half pull-right"}Sed ut perspiciatis et quasi **[architecto beatae vitae](https://en.wikipedia.org/wiki/Architect){: class="text-success" }** dicta sunt explicabo. {: class="lead"}\n\n';
     var parser = new mdFlux();
@@ -34,7 +34,7 @@ You can use any markdown to html or html to markdown parser you like.
 ![](result.png)
 
 
-## test
+## Test
 
     $ npm install
     $ ./node_modules/.bin/browserify ./test/main.js -o ./test/bundle.js
