@@ -1,20 +1,27 @@
 {
   "name": "mdflux",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Simply convert markdown to html with attributes list support and back again",
+  "version": "0.1.1",
+  "author": {
+    "name": "Olivier Kautz",
+    "email": "olivier@k3z.fr"
   },
-  "author": "Olivier Kautz",
-  "license": "ISC",
+  "main": "./lib/mdflux.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:k3z/mdflux.git"
+  },
+  "license": "MIT",
   "dependencies": {
-    "bootstrap": "^3.3.6",
     "jquery": "^2.1.4",
     "marked": "^0.3.5",
     "to-markdown": "^2.0.1"
   },
   "devDependencies": {
+    "bootstrap": "^3.3.6",
     "browserify": "^12.0.1"
   }
 }
